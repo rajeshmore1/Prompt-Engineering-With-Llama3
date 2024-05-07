@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Input</title>
+</head>
+<body>
+    <form action="/predict/" method="post">
+        <label for="prompt">Enter Prompt:</label><br>
+        <input type="text" id="prompt" name="prompt"><br>
+        <label for="model">Choose Model:</label>
+        <select id="model" name="model">
+            <option value="llama3-70b-8192">LLAMA3 70B</option>
+            <option value="llama3-8b-8192">LLAMA3 8B</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
